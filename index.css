@@ -1,0 +1,282 @@
+body{
+  font-family: 'Indie Flower', cursive;
+  background-image: url('img/background_BN.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.title{
+  position: relative;
+}
+
+.download{
+  position: relative;
+  width: 100%;
+  height: 60px;
+}
+
+.container{
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.anothernote{
+  position: relative;
+  color: white;
+  text-align: center;
+  margin-top: 2%;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding: 5px;
+  font-size: 20px;
+  font-family: 'Baloo Bhai', cursive;
+}
+.anothernote::after {
+  content: "";
+  background-color: #323348;
+  opacity: 0.8;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  border-radius: 15px;
+}
+
+.bottom{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 50%;
+  background-color: #323348;
+  border-top: 5px solid white;
+}
+
+.apk, .playstore{
+  position: relative;
+  height: 60px;
+  width: 240px;
+  outline: none;
+  border: 1px solid white;
+  background-color: #323348;
+  color: white;
+  font-weight: bold;
+  font-family: 'Baloo Bhai', cursive;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.apk{
+}
+
+.playstore{
+  cursor: not-allowed;
+}
+
+.popup{
+  position: absolute;
+  height: 250px;
+  width: 500px;
+  background-color: white;
+  color: black;
+  left: 50%;
+  top: 50%;
+  z-index: 7;
+  transform: translate(-50%,-50%);
+  border: 3px solid black;
+  border-radius: 6px;
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Baloo Bhai', cursive;
+
+}
+
+.okbutton{
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: 5%;
+  height: 50px;
+  width: 100px;
+  background-color: darkred;
+  color: white;
+  font-family: 'Baloo Bhai', cursive;
+  outline: none;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+.okbutton:hover{
+  background-color: black;
+}
+
+.okbutton:active{
+  background-color: gray;
+}
+
+.apk:hover, .playstore:hover{
+  background-color: black;
+}
+
+.image-container{
+  margin-top: 3%;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  border: 1px solid white;
+  padding: 15px;
+}
+
+.screen{
+  height: 300px;
+  width: auto;
+  cursor: pointer;
+}
+
+.screen:hover{
+  opacity: 0.9;
+}
+
+h1{
+  text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+  text-align: center;
+  font-size: 50px;
+  color: darkred;
+}
+
+.note{
+  position: absolute;
+  color:white;
+  bottom:0;
+  margin-left: 8%;
+  margin-right: 8%;
+}
+
+.background{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: black;
+  z-index: 5;
+  opacity: 0.8;
+  visibility: hidden;
+}
+
+.zoomer{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border: 3px solid white;
+  z-index: 6;
+  visibility: hidden;
+}
+
+.cross{
+  position: absolute;
+  font-size: 50px;
+  right: 15px;
+  top: 0;
+  z-index: 6;
+  color: white;
+  cursor: pointer;
+  visibility: hidden;
+}
+
+.image-container-mobile{
+  visibility: hidden;
+}
+
+
+/*@media only screen and (max-width: 600px) {
+  h1{
+    font-size: 35px;
+  }
+  .bottom{
+    visibility: hidden;
+  }
+
+  .apk{
+    margin-bottom: 5px;
+  }
+
+  .anothernote{
+    visibility: hidden;
+  }
+
+  .image-container{
+    visibility: hidden;
+  }
+  .image-container-mobile{
+    visibility: visible;
+    position: relative;
+    top: 50px;
+    left: 50%;
+  }
+
+  .source{
+
+  }
+}*/
+
+@media only screen and (max-width: 1781px) {
+  .screen{
+    height: 250px;
+  }
+}
+@media only screen and (max-width: 1508px) {
+  .screen{
+    height: 200px;
+  }
+}
+
+@media only screen and (max-width: 1236px) {
+  .screen{
+    height: 150px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  body{
+    background-size: auto;
+  }
+  .anothernote{
+    font-size: 10px;
+    margin-top: 30%;
+  }
+  h1{
+    font-size: 35px;
+  }
+  .apk, .playstore{
+  }
+
+  .image-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0;
+    width: 0;
+    visibility: hidden;
+  }
+
+  .screen{
+    height: 0;
+    width: 0;
+  }
+
+  .bottom{
+    height: 20%;
+  }
+  .note{
+    font-size: 10px;
+    text-align: center;
+  }
+}
