@@ -5,6 +5,10 @@ body{
   background-size: cover;
 }
 
+a{
+  color: #323348;
+}
+
 .title{
   position: relative;
 }
@@ -137,6 +141,19 @@ body{
   height: 300px;
   width: auto;
   cursor: pointer;
+}
+
+.paypal2{
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  height: 80px;
+  width: 80px;
+  font-size: 50px;
+  background-color: #323348;
+  color: white;
+  cursor: pointer;
+  outline: none;
 }
 
 .screen:hover{
@@ -277,6 +294,14 @@ h1{
   }
   .note{
     font-size: 10px;
-    text-align: center;
+    text-align: left;
+    margin-right: 30%;
+  }
+  .paypal2{
+    top: inherit;
+    left: inherit;
+    bottom: 15px;
+    right: 15px;
+    z-index: 3;
   }
 }
