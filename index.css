@@ -273,6 +273,15 @@ h1{
     font-size: 35px;
   }
   .apk, .playstore{
+    margin: 5px;
+  }
+
+  .download{
+    height: 125px;
+  }
+
+  .container{
+    width: 240px;
   }
 
   .image-container{
